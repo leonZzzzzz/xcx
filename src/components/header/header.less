@@ -1,0 +1,103 @@
+.background-color-white {
+  background-color: #1B1B1B;
+}
+.background-color-fabd00 {
+  background-color: #FABD00;
+}
+//默认-带title头部
+.header-default {
+  display: flex;
+  align-items: center;
+  height: 1.6rem;
+  width: 100%;
+  padding: .4rem .4rem 0;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  .left-icon-box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 24%;
+    .left-icon {
+      height: .48rem;
+    }
+    .train-log {
+      height: .8rem;
+    }
+    //.left-icons {
+    //  height: .48rem;
+    //  margin-bottom: 0.2rem;
+    //  position: relative;
+    //  right: 1.5rem;
+    //}
+  }
+  .title {
+    font-size: .48rem;
+    padding: 0 .267rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 52%;
+    //font-weight: lighter;
+    //position: relative;
+    //top: -0.08rem;
+  }
+  .right-text-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: .4rem;
+    height: 100%;
+    width: 24%;
+    white-space: nowrap;
+  }
+  .right-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: .4rem;
+    height: 100%;
+    width: 24%;
+    position: relative;
+    .right-icon-18 {
+      height: .48rem;
+    }
+    .right-icon-22 {
+      height: .587rem;
+    }
+  }
+}
+//不带title头部左边按钮
+.header-not-title-left {
+  display: flex;
+  align-items: center;
+  height: 1.2rem;
+  position: fixed;
+  top: .4rem;
+  left: 0;
+  z-index: 999;
+  .left-icon {
+    height: .48rem;
+    display: block;
+    padding: 0 .667rem 0 .4rem;
+  }
+}
+//不带title头部右边按钮
+.header-not-title-right {
+  display: flex;
+  align-items: center;
+  height: 1.2rem;
+  position: fixed;
+  top: .4rem;
+  right: .4rem;
+  z-index: 999;
+  .right-icon {
+    //height: .48rem;
+    //display: block;
+    //padding: 0 .4rem 0 .667rem;
+  }
+}

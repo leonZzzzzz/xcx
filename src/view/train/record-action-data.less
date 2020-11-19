@@ -1,0 +1,234 @@
+.record-action-data {
+  width: 100%;
+  .head-bar{
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+    height: 44px;
+    line-height: 1;
+    padding: 0 10px;
+    text-align: center;
+    white-space: nowrap;
+    .head-theme-b-stxt{
+      display:block;
+      font-size:10px;
+      margin-top:2px;
+    }
+    .head-theme-b-left{
+      width:40px;
+      padding-right:10px;
+    }
+    .head-theme-b-right{
+      width:40px;
+      padding-left:10px;
+      position: relative;
+    }
+    .head-theme-b-center{
+      flex:1;
+    }
+    .head-theme-b-search{
+      font-size:14px;
+    }
+    .icon-image{
+      display:inline-block;
+      background-size:100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .icon-back {
+      background: url("../../assets/original-images/icon-back.png");
+      width:10px;
+      height:16px;
+    }
+    .fs-5 {
+      font-size: .5rem;
+      font-weight: 600;
+    }
+
+  }
+  .head-theme-b{
+    background-color: #fff;
+    color: #000;
+  }
+  .pt-44 {
+    padding-top: 44px;
+  }
+  .box-content {
+    width: 100%;
+    font-size: .4rem;
+    margin-bottom: 45px;
+    .action-explain {
+      width: 100%;
+      height: 1rem;
+      font-size: .43rem;
+      text-align: center;
+      position: fixed;
+      top: 44px;
+      margin-top: 3rem;
+      z-index: 2;
+      background-color: white;
+    }
+    .coupon-item {
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      padding: 1% 0;
+      background-color: white;
+      position: relative;
+      margin-bottom: 3%;
+      position: fixed;
+      top: 44px;
+      z-index: 2;
+      .coupon-icon {
+        height: 100%;
+        color: #000000;
+        text-align: center;
+        width: 28%;
+        border-bottom-left-radius: .2rem;
+        border-top-left-radius: .2rem;
+        .money {
+          color: #312b2b;
+          height: 100%;
+          text-align: center;
+          font-size: 0.7rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          .spanbei {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: .67rem;
+            color: white;
+            margin-bottom: -5%;
+            img {
+              width: 2.3rem;
+              height: 2.5rem;
+            }
+            .dollar-sign{
+              font-size: 0.6rem;
+              margin-bottom: -4%;
+            }
+          }
+        }
+      }
+      .notice-center {
+        width: 48%;
+        height: 100%;
+        padding-left: 6%;
+        position: relative;
+        .notice-title{
+          width: 100%;
+          height: 46%;
+          display: flex;
+          align-items: center;
+          font-size: .5rem;
+        }
+        .notice-text {
+          width: 100%;
+          height: 20%;
+          font-size: .4rem;
+          color: #81838e;
+        }
+        .expired {
+          width: 1.35rem;
+          height: .75rem;
+          font-size: .1rem;
+          background-color: #CCCCCC;
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom-left-radius: .2rem;
+        }
+        .employ {
+          width: 1.35rem;
+          height: .75rem;
+          font-size: .1rem;
+          background-color: #DD0000;
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom-left-radius: .2rem;
+        }
+      }
+      .add-btn {
+        width: 24%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        div {
+          padding: 5px 10px;
+          border: 1px solid #169BD5;
+          color: #169BD5;
+          font-size: .1rem;
+          border-radius: .2rem;
+        }
+      }
+      .coupon-icon-used {
+        background-color: #CCCCCC;
+      }
+    }
+    .form {
+      font-size: .48rem;
+      margin-bottom: 3%;
+      .cell-item{
+        width: 100%;
+        height: 1.4rem;
+        background-color: RGBA(255, 255, 255, 1);
+        display: flex;
+        align-items: center;
+        padding: 0 5%;
+        border-bottom: 1px solid #e4e4e4;
+        .title {
+          width: 35%;
+          white-space: nowrap;
+        }
+        .content {
+          width: 65%;
+          text-align: left;
+          input {
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .confirm-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: .4rem;
+    text-align: center;
+    display: flex;
+    background-color: white;
+    //border-top: 1px solid #e4e4e4;
+    div {
+      width: 33%;
+    }
+  }
+}

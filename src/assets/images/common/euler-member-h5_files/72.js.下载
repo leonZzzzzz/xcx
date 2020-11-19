@@ -1,0 +1,14 @@
+(this["webpackJsonp"] = this["webpackJsonp"] || []).push([[72],{
+
+/***/ "./src/view/circlefriends/circlefriends":
+/*!**********************************************!*\
+  !*** ./src/view/circlefriends/circlefriends ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvdmlldy9jaXJjbGVmcmllbmRzL2NpcmNsZWZyaWVuZHMuanMiLCJzb3VyY2VzIjpbXSwibWFwcGluZ3MiOiIiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/view/circlefriends/circlefriends\n");
+
+/***/ })
+
+}]);

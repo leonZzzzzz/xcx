@@ -1,0 +1,131 @@
+.editing-information {
+  background-color: #313131;
+  height: 100%;
+  padding-top: 1.6rem;
+  input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #727171;
+  }
+  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #727171;
+  }
+  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #727171;
+  }
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #727171;
+  }
+  textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color: #727171;
+  }
+  textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #727171;
+  }
+  textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #727171;
+  }
+  textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #727171;
+  }
+  .cell-box {
+    color: white;
+    padding: 0 .4rem;
+    background-color: #262626;
+    margin-top: .267rem;
+    li:last-child {
+      border-bottom: none;
+    }
+    .cell {
+      font-size: .374rem;
+      display: flex;
+      align-items: center;
+      border-bottom: .03rem solid #8E8E8E;
+      //font-weight: lighter;
+      //background-color: #262626;
+      height: 1.173rem;
+      .cell-title {
+        min-width: 2.4rem;
+      }
+      .cell-photo {
+        height: 1.6rem;
+        width: 1.6rem;
+        display: flex;
+        margin-right: .6rem;
+        img {
+          height: 1.6rem;
+          width: 1.6rem;
+          border-radius: 100%;
+        }
+      }
+      .cell-text {
+        height: 1.173rem;
+        line-height: 1.173rem;
+        width: 100%;
+      }
+      .input-style {
+        width: 100%;
+        background-color: #262626;
+        outline: none;
+        border: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // 取消点击高亮效果
+        color: white;
+        font-size: .374rem;
+        //font-weight: lighter;
+      }
+      .textarea-style {
+        width: 100%;
+        background-color: #262626;
+        border: none;
+        padding: .4rem 0;
+        outline: none;
+        color: white;
+        font-size: .374rem;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // 取消点击高亮效果
+        //font-weight: lighter;
+      }
+    }
+  }
+  .save-bth {
+    width: 9.196rem;
+    height: 1.173rem;
+    font-size: .427rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.134rem;
+    background-color: #F6BF3C;
+    color: black;
+    margin: .534rem auto 0;
+  }
+  .popup-upload {
+    width: 7.73rem;
+    top: 40%;
+    padding: 0 .4rem .4rem;
+    text-align: center;
+    background-color: #313131;
+    .popup-upload-title {
+      font-size: .48rem;
+      padding: .814rem 0 .494rem;
+      color: #c9caca;
+    }
+    //预览图片的尺寸
+    .popup-upload-img {
+      width: 4.8rem;
+      height: 4.8rem;
+      border-radius: 100%;
+    }
+    .popup-upload-bth-box {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .4rem;
+      font-size: .374rem;
+      .bth-style {
+        height: .907rem;
+        width: 3.265rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .134rem;
+      }
+    }
+  }
+}

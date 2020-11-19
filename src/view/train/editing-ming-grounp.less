@@ -1,0 +1,135 @@
+.editing-ming-group {
+  background-color: #313131;
+  width: 100%;
+  height: 100%;
+  padding: 1.6rem 0 1.067rem;
+  .box-content {
+    width: 100%;
+    font-size: .374rem;
+    color: white;
+    height: inherit;
+    position: relative;
+    padding-top: 2.668rem;
+    .content-absolute-top {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      padding: .267rem 0;
+      .top-cell {
+        display: flex;
+        padding: .267rem;
+        background-color: #262626;
+        .cell-img-box {
+          min-width: 1.6rem;
+          max-width: 1.6rem;
+          height: 1.6rem;
+          margin-right: .534rem;
+          .img-style {
+            width: 1.6rem;
+            height: inherit;
+          }
+        }
+        .content-action {
+          width: 100%;
+          height: inherit;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          overflow: hidden;
+          padding-right: .587rem;
+          .action-name {
+            font-size: .453rem;
+            margin-bottom: .134rem;
+          }
+          .action-type {
+            font-size: .32rem;
+          }
+          div {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        .content-bth {
+          height: .8rem;
+          min-width: 2.133rem;
+          max-width: 2.133rem;
+          border-radius: .134rem;
+          color: #F6BF3C;
+          border: .015rem solid #F6BF3C;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto 0;
+        }
+      }
+      .top-hint-text {
+        width: 100%;
+        padding: .32rem .267rem;
+        span {
+          font-size: .32rem;
+        }
+      }
+    }
+    .content-form {
+      height: inherit;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling : touch;
+      .form-li {
+        padding: 0 .267rem;
+        font-size: .374rem;
+        background-color: #262626;
+        margin-bottom: .267rem;
+        .li-row-style {
+          height: 1.173rem;
+          display: flex;
+          align-items: center;
+          border-bottom: .015rem solid #8E8E8E;
+          .row-name {
+            min-width: 1.8rem;
+            max-width: 1.8rem;
+          }
+        }
+        .li-title {
+          .title-text {
+            width: 100%;
+          }
+          .del-bth {
+            margin-left: .587rem;
+            border: .015rem solid #F6BF3C;
+            min-width: 1.6rem;
+            max-width: 1.6rem;
+            height: 0.8rem;
+            border-radius: 0.107rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #F6BF3C;
+          }
+        }
+        .li-input {
+          width: 100%;
+          background-color: #262626;
+          border: none;
+          padding: 0 .4rem;
+          outline: none;
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // 取消点击高亮效果
+          color: white;
+        }
+      }
+    }
+  }
+  .bottom-bth {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.067rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #F6BF3C;
+    font-size: .427rem;
+  }
+}

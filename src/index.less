@@ -1,0 +1,90 @@
+@import '~@lemon/euler-app-h5/src/index.less';
+
+*{
+//
+}
+.content{
+  -webkit-overflow-scrolling: touch;
+}
+.ivu-progress-inner{
+  background: #313131;
+}
+//.picker-item{
+//  width: 1.6rem;
+//}
+.ivu-progress{
+  height: 0.3rem;
+}
+ul, dl, dt, dd, li
+{
+  box-sizing: content-box;
+  vertical-align: baseline;
+}
+.mint-swipe-indicator.is-active {
+  background: #FABD00;
+}
+.mint-swipe-indicators {
+  bottom: .133rem;
+}
+.mint-swipe-indicator {
+  width: .267rem;
+  height: .267rem;
+  margin: 0 .187rem;
+  background: #727171;
+  opacity: 1;
+}
+.mint-navbar .mint-tab-item.is-selected{
+  background-color: #313131;
+  color: #F6BF3C;
+  border-bottom: 3px solid #F6BF3C;
+}
+.mint-cell:hover {
+  color: #F6BF3C!important;
+}
+.mint-checkbox-input:checked + .mint-checkbox-core {
+  background-color: #F6BF3C;
+  border-color: #F6BF3C;
+}
+.mint-checkbox-core::after {
+  top: .08rem;
+  left: .16rem;
+  position: absolute;
+  width: 0.16rem;
+  height: 0.267rem;
+}
+//.v-modal {
+//  opacity: 0.8;
+//}
+//.mint-cell-wrapper{
+//  background-color: #262626;
+//  color: white;
+//}
+.mint-switch-input:checked + .mint-switch-core {
+  background-color: #F6BF3C;
+  border-color: #F6BF3C;
+}
+.mint-switch-core {
+  border-radius: 10rem;
+  height: .693rem;
+  width: 1.2rem;
+  display: flex;
+  align-items: center;
+  border: .03rem solid #8E8E8E;
+  background: #262626;
+}
+.mint-switch-core::before {
+  height: .693rem;
+  width: 1.2rem;
+  background-color: #262626;
+  border: .03rem solid #8E8E8E;
+}
+.mint-switch-core::after {
+  height: .667rem;
+  width: .667rem;
+}
+.mint-switch-input:checked + .mint-switch-core::after {
+  transform: translateX(0.48rem);
+}
+.mint-switch-core::after, .mint-switch-core::before {
+  top: auto;
+}

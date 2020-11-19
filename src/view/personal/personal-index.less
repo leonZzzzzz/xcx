@@ -1,0 +1,258 @@
+.personal-index {
+  width: 100%;
+  height: 100%;
+  background-color: #313131;
+  padding-bottom: 1.36rem;
+  .flow-bar {
+    width: 100%;
+    height: 1.6rem;
+    position: fixed;
+    color: white;
+    font-weight: 600;
+    font-size: .48rem;
+    text-align: center;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: .4rem .4rem 0;
+  }
+  .box-content {
+    position: relative;
+    padding: 6.692rem 0 1rem;
+    height: inherit;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    .user-background {
+      width: 100%;
+      height: 6.691rem;
+      overflow: hidden;
+      .header-picture {
+        width: 100%;
+        height: 100%;
+        .header-background {
+          width: 100%;
+          height: 1.6rem;
+          text-align: center;
+          line-height: 1.6rem;
+          color: white;
+          font-size: 0.48rem;
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          display: flex;
+          padding: .4rem .4rem 0;
+        }
+        .img-style {
+          width: 100%;
+          //height: 7.5rem;
+          position: absolute;
+          top: 0;
+        }
+        .header-footer-background{
+          background: linear-gradient(#FABD00,#0000);
+          width: 100%;
+          height: 5rem;
+          position: relative;
+          top: 0;
+        }
+        .bell {
+          width: 1rem;
+          height: 1rem;
+          position: fixed;
+          right: .2rem;
+          top: .2rem;
+          z-index: 2;
+          img {
+            width: 1rem;
+            height: 1rem;
+          }
+        }
+      }
+    }
+    .user {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 2.1rem 0 .4rem;
+      .user-introduce {
+        width: 100%;
+        position: relative;
+        padding: 0 0.44rem;
+        .header-picture-icon {
+          display: flex;
+          align-items: flex-end;
+          .portrait-box {
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-right: .334rem;
+            .portrait {
+              width: 1.6rem;
+              height: 1.6rem;
+              border-radius: 100%;
+              display: block;
+              object-fit: cover;
+            }
+          }
+        }
+        .personality-signature {
+          font-size: .32rem;
+          color: white;
+          margin-top: .4rem;
+          height: .47rem;
+        }
+        .user-detail {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: .4rem;
+          .user-detail-main {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            .number {
+              max-width: 100%;
+              height: .853rem;
+              line-height: .8rem;
+              font-size: .534rem;
+              color: #F6BF3C;
+              font-weight: bold;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              text-align: center;
+              padding: 0 .134rem;
+            }
+            .number-detail {
+              color: #8E8E8E;
+              font-size: .32rem;
+            }
+          }
+        }
+        .user-title {
+          margin-top: .2rem;
+          .user-name {
+            font-size: .48rem;
+            color: #FFFFFF;
+            margin-bottom: .134rem;
+            display: flex;
+            align-items: center;
+            .name-style {
+              max-width: 6rem;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              //font-weight: lighter;
+            }
+            .sex {
+              width: 15px;
+              height: 15px;
+              margin-left: .267rem;
+            }
+          }
+          .title {
+            display: flex;
+            height: .507rem;
+            .level {
+              background-color: #232323;
+              border-radius: 0.5rem;
+              color: #ffffff;
+              border: .015rem solid #F6BF3C;
+              height: .507rem;
+              display: flex;
+              align-items: center;
+              padding: 0 .214rem;
+              span {
+                max-width: 1.6rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+      }
+    }
+    .user-cell {
+      background-color: #262626;
+      margin-top: .267rem;
+      li:last-child {
+        border-bottom: none;
+      }
+      .cell {
+        height: 1.173rem;
+        font-size: .374rem;
+        display: flex;
+        align-items: center;
+        padding: 0 .4rem;
+        border-bottom: .015rem solid #313131;
+        //font-weight: lighter;
+        .cell-title {
+          color: white;
+          white-space: nowrap;
+        }
+        .cell-text {
+          color: #8E8E8E;
+          width: 100%;
+          text-align: right;
+        }
+        .right-arrows-icon {
+          height: .32rem;
+          margin-left: .267rem;
+        }
+      }
+    }
+  }
+  .opacity-hide {
+    -webkit-transition: opacity 0.3s 0.01s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .opacity-show {
+    -webkit-transition: opacity 0.3s 0.01s;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .pop-table{
+    width: 9rem;
+    height: 8rem;
+    color: #727171;
+    .pop-tab{
+      text-align: center;
+      margin: 0 auto;
+      width: 8.5rem;
+      height: 2rem;
+      border: 1px #C9CACA solid;
+      position: relative;
+      top: 1.8rem;
+      tr{
+        border: 1px #C9CACA solid;
+      }
+      td{
+        border: 1px #C9CACA solid;
+      }
+      .pop-tr-week{
+        height: 1rem;
+      }
+      .pop-tr-week th{
+        width: 0.7rem;
+      }
+      .style-tr{
+        height: 1.5rem;
+      }
+    }
+    .class-pop{
+      position: absolute;
+      margin-top: 0.5rem;
+      span{
+        margin: 0.85rem;
+      }
+    }
+  }
+}

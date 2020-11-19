@@ -1,0 +1,100 @@
+
+.specs_list{
+  //position: fixed;
+  //top: 35%;
+  ///*left: 15%;*/
+  //width: 100%;
+  //background-color: #fff;
+  //z-index: 18;
+  //border: 1px;
+  //border-radius: 0.2rem;
+  position: fixed;
+  top: 20%;
+  left: 0%;
+  width: 103%;
+  //height: 100%;
+  background-color: #fff;
+  z-index: 10;
+  border: 7px;
+  border-radius: 0.2rem;
+  .specs_list_header{
+    h4{
+    //@include sc(.7rem, #222);
+      font-size: .5rem;
+      color:#222;
+      font-weight: normal;
+      text-align: center;
+      //padding: .5rem;
+      margin: .2rem;
+    }
+    .specs_cancel{
+      position: absolute;
+      right: .5rem;
+      top: .3rem;
+    }
+  }
+  .specs_details{
+    padding: 0 .5rem;
+    .specs_details_title{
+    //@include sc(.6rem, #666);
+      font-size: .4rem;
+      color: #666;
+      margin: .2rem;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      padding: .4rem 0;
+      li{
+        font-size: 0.3rem;
+        padding: 0.2rem 0.4rem;
+        border: 0.025rem solid #d6bbbb;
+        border-radius: 0.2rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.1rem;
+      }
+      .specs_activity{
+        border-color: #3199e8;
+        color: #3199e8;
+      }
+    }
+  }
+  .specs_footer{
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 0.5rem 0;
+    border: 1px;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    .specs_price{
+      span{
+        color: #ff6000;
+      }
+      span:nth-of-type(1){
+        font-size: .4rem;
+      }
+      span:nth-of-type(2){
+        font-size: .5rem;
+        font-weight: bold;
+        font-family: Helvetica Neue,Tahoma;
+      }
+    }
+    .specs_addto_cart{
+    //@include wh(4rem, somatotype.3rem);
+      width: 3rem;
+      height: 1rem;
+      background-color: #3199e8;
+      border: 1px;
+      border-radius: 0.15rem;
+      position: absolute;
+      right: 5%;
+    //@include sc(.6rem, #fff);
+      font-size: .3rem;
+      color: #fff;
+      text-align: center;
+      line-height: 1rem;
+    }
+  }
+}

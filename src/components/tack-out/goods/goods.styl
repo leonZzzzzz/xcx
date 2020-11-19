@@ -1,0 +1,145 @@
+@import '~@/assets/stylus/common/mixin'
+.goods
+  display flex
+  position absolute
+  top 190px
+  bottom 46px
+  width 100%
+  //overflow hidden
+  .select{
+    background #ffffff
+    height  3rem
+    position fixed
+    top 18rem
+    z-index 1
+  }
+  .background-big
+    width 50%;
+    height 5rem;
+    text-align center;
+    background-color rgba(0,0,0,0);
+    z-index 999
+    .background-title
+       font-size 0.39rem;
+       color #ffffff;
+       margin 0.3rem;
+    .background-btn
+      width 80%
+      height 1rem
+      border 1px solid
+      color #ffffff
+      margin 0 auto
+      line-height 1rem
+      position relative
+      top 0.2rem
+      font-size 0.4rem
+
+   .menu-wrapper
+     flex 0 0 80px
+     background #f3f5f7
+     margin-top: 2.9rem;
+    .badge
+      position absolute
+      top: 0;
+      right 0
+      background: rgb(240, 20, 20);
+      color: white;
+      width 24px
+      height 16px
+      line-height: 16px;
+      font-size: 9px;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+      font-weight: 700;
+      border-radius: 16px;
+      text-align center
+    .menu-item-selected
+      background #F6BF3C
+      font-weight 700
+      margin-top -1px
+    .menu-item,.menu-item-selected
+      position relative
+      display table
+      height 54px
+      line-height 14px
+      width 56px
+      padding 0 12px
+      &:last-child:after
+        content none
+    .menu-item:after
+      position: absolute
+      content: ''
+      left: 12px
+      width: 56px
+      bottom: 0
+      border-bottom: 1px solid rgba(7,17,27,0.1)
+    .text
+      display table-cell
+      vertical-align middle
+      font-size 12px
+      font-weight 200
+      white-space normal
+      line-height 14px
+      .iconMap
+        vertical-align middle
+  .foods-wrapper
+    flex 1
+    margin-top: 2.9rem;
+    overflow:hidden;
+    .food-list
+      h1
+        height 26px
+        line-height 26px
+        padding-left 12px
+        font-size 12px
+        color rgb(147,153,159)
+        background white
+        border-left 2px solid #ffc107
+    .food-item
+      position relative
+      display flex
+      margin: 0 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(7,17,27,0.1)
+      .icon
+        flex 0 0 57px
+      &:last-child
+        border-bottom none
+      .content
+        flex 1
+        padding-left 10px
+        h2
+          margin 2px 0 8px 0
+          font-size 14px
+          line-height 14px
+          height 14px
+          font-weight 700
+          color rgb(7,17,27)
+        .sell-info,.description
+          font-size 10px
+          color rgb(147,153,159)
+          line-height 10px
+          .sellCount
+            margin-right 4px
+        .description
+          font-size 10px
+          margin-bottom 8px
+          line-height: 12px
+        .price
+          font-size 10px
+          font-weight 700
+          line-height 24px
+          .newPrice
+            font-size 14px
+            color rgb(240,20,20)
+            .unit
+              font-size 10px
+              font-weight normal
+          .oldPrice
+            text-decoration line-through
+            color rgb(147,153,159)
+            padding-left 4px
+        .cartcontrol-wrapper
+          position: absolute
+          right: 0
+          bottom 12px
+          z-index 2

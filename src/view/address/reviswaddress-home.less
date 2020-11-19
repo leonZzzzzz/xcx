@@ -1,0 +1,166 @@
+.address-home{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  padding-top: 1.6rem;
+  color: white;
+  .text-color-on {
+    color: #F6BF3C;
+  }
+  input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ffffff;
+  }
+  input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+  }
+  input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ffffff;
+  }
+  input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ffffff;
+  }
+  textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color: #ffffff;
+  }
+  textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+  }
+  textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ffffff;
+  }
+  textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #ffffff;
+  }
+  .content-box {
+    transition: 1s;
+    transform: scale(1);
+    height: 100%;
+    background-color: #313131;
+    padding-top: .267rem;
+    .cell-box {
+      li:last-child {
+        border-bottom: none;
+      }
+      .cell {
+        font-size: .374rem;
+        display: flex;
+        align-items: center;
+        padding: 0 .4rem;
+        border-bottom: .03rem solid #8E8E8E;
+        background-color: #262626;
+        height: 1.173rem;
+        .cell-title {
+          white-space: nowrap;
+        }
+        .cell-text {
+          height: 1.173rem;
+          line-height: 1.173rem;
+          width: 100%;
+        }
+        .input-style {
+          width: 100%;
+          background-color: #262626;
+          outline: none;
+          border: none;
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // 取消点击高亮效果
+          color: white;
+          font-size: .374rem;
+        }
+        .textarea-style {
+          width: 100%;
+          background-color: #262626;
+          border: none;
+          padding: .4rem 0;
+          outline: none;
+          color: white;
+          font-size: .374rem;
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // 取消点击高亮效果
+        }
+      }
+    }
+    .switch-bth {
+      margin-top: .374rem;
+      background-color: #262626;
+      height: 1.173rem;
+      line-height: 1.173rem;
+      font-size: 0.374rem;
+      display: flex;
+      align-items: center;
+      padding: 0 .374rem;
+      .switch-text {
+        width: 100%;
+      }
+    }
+    .bth {
+      background-color: #F6BF3C;
+      height: 1.173rem;
+      line-height: 1.173rem;
+      font-size: 0.374rem;
+      text-align: center;
+      margin: .534rem auto 0;
+      width: 9.222rem;
+      border-radius: 10rem;
+      color: #000000;
+    }
+  }
+  .popup-area {
+    width: 100%;
+    height: 70%;
+    background-color: #262626;
+    padding-top: 2.615rem; // 1.281
+    color: white;
+    .popup-top-absolute {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      .area-title {
+        height: 1.334rem;
+        width: 100%;
+        background-color: #1B1B1B;
+        display: flex;
+        align-items: center;
+        font-size: .427rem;
+        border-bottom: .03rem solid #8E8E8E;
+        position: relative;
+        .bth-style {
+          min-width: 1.6rem;
+          max-width: 1.6rem;
+          text-align: center;
+          font-size: .374rem;
+        }
+        .title-text {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .area-info-box {
+        display: flex;
+        background-color: #1B1B1B;
+        font-size: .374rem;
+        height: 1.334rem;
+        align-items: center;
+        padding: 0 .4rem;
+        box-shadow: 0 0 .267rem 0 #000000;
+        .area-info {
+          padding-right: .267rem;
+        }
+      }
+    }
+    .popup-area-container {
+      height: 100%;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling : touch;
+      font-size: .374rem;
+      .container-cell {
+        padding: .32rem .4rem;
+      }
+      .text-color-on {
+        color: #F6BF3C;
+      }
+    }
+  }
+  .popupVisible {
+    transform: scale(0.95) !important;
+  }
+}

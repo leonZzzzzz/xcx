@@ -1,0 +1,237 @@
+.buy-gym-card {
+  width: 100%;
+  .head-bar{
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+    height: 44px;
+    line-height: 1;
+    padding: 0 10px;
+    text-align: center;
+    white-space: nowrap;
+    .head-theme-b-stxt{
+      display:block;
+      font-size:10px;
+      margin-top:2px;
+    }
+    .head-theme-b-left{
+      width:40px;
+      padding-right:10px;
+    }
+    .head-theme-b-right{
+      width:40px;
+      padding-left:10px;
+      position: relative;
+    }
+    .head-theme-b-center{
+      flex:1;
+    }
+    .head-theme-b-search{
+      font-size:14px;
+    }
+    .icon-image{
+      display:inline-block;
+      background-size:100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .icon-back {
+      background: url("../../assets/original-images/icon-back.png");
+      width:10px;
+      height:16px;
+    }
+    .fs-5 {
+      font-size: .5rem;
+      font-weight: 600;
+    }
+  }
+  .head-theme-b{
+    background-color: #fff;
+    color: #000;
+  }
+  .box-content-buy-gym {
+    width: 100%;
+    overflow: scroll;
+    font-size: .1rem;
+    background-color: white;
+    .data-line {
+      width: 100%;
+      height: 10rem;
+      background: url("../../assets/original-images/head_sculpture.jpg");
+      background-size: 100% 100%;
+      .data-line-background {
+        width: 100%;
+        height: 75%;
+        background-color: white;
+        opacity: .5;
+      }
+      .data-line-explain {
+        width: 100%;
+        height: 25%;
+        background-color: rgba(255,255,255,.7);
+        .move-explain {
+          width: 100%;
+          font-size: .2rem;
+          height: 60%;
+          padding-top: 10px;
+          padding-left: 20px;
+          img {
+            vertical-align: middle;
+            padding: 0 2px;
+          }
+        }
+        .select {
+          width: 100%;
+          font-size: .2rem;
+          height: 40%;
+          text-align: right;
+          .select-button {
+            display: inline-block;
+            padding: 4px 10px;
+            margin-right: 10px;
+            background: #ffffff;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .gym-card {
+      width: 100%;
+      .gym-car-title {
+        width: 90%;
+        height: 1rem;
+        font-size: .5rem;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+      }
+      .gym-car-category {
+        width: 95%;
+        height: 1.3rem;
+        margin: 0 auto;
+        display: flex;
+        div {
+          width: 33%;
+          height: 100%;
+          font-size: .4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .selected {
+          background-color: #669999;
+          color: #ffffff;
+        }
+      }
+      .cycle {
+        width: 92%;
+        margin: 0 auto;
+        margin-top: .2rem;
+        background-color: white;
+        table {
+          width: 100%;
+          font-size: .1rem;
+          tr {
+            width: 100%;
+            height: 1rem;
+          }
+          td:nth-child(1) {
+            width: 6%;
+          }
+          td {
+            border: 1px solid #81838e;
+            width: 11%;
+            text-align: center;
+            img {
+              width: .9rem;
+            }
+          }
+        }
+      }
+      .gym-card-rule {
+        width: 92%;
+        margin: .2rem auto;
+        background-color: #009999;
+        color: white;
+        padding: 5px 15px;
+        border-radius: .2rem;
+      }
+      .gym-card-time{
+        width: 92%;
+        margin: 0 auto;
+        margin-top: .2rem;
+        background-color: #FF9966;
+        color: white;
+        padding: 5px 15px;
+        border-radius: .2rem;
+      }
+      .order-detail {
+        width: 92%;
+        margin: 0 auto;
+        border-top: 1px solid #e4e4e4;
+        margin-top: .2rem;
+        .order-title {
+          height: 1rem;
+          font-size: .5rem;
+          display: flex;
+          align-items: center;
+          margin: 0 auto;
+        }
+        .order-rows {
+          width: 100%;
+          height: 1rem;
+          display: flex;
+          font-size: .4rem;
+          .row-name {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+          }
+          .row-number{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+          .total-number {
+            font-size: .45rem;
+            color: #ff0000;
+          }
+        }
+      }
+      .order-explain {
+        margin: .3rem auto;
+        width: 98%;
+        padding: 5px 15px;
+        border-radius: .2rem;
+        border-top: 3px solid #F1F1F6;
+        border-bottom: 3px solid #F1F1F6;
+      }
+      .foot-botton {
+        width: 92%;
+        height: 1rem;
+        font-size: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        //border: 1px solid #e4e4e4;
+        border-radius: .2rem;
+        background-color: #169BD5;
+        color: white;
+      }
+    }
+  }
+}

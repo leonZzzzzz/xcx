@@ -1,0 +1,70 @@
+.keyboard {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #1d1f1e;
+  z-index: 99999;
+  .key:active {
+    background: #f9c14b;
+  }
+  .key {
+    color: white;
+    height: 1.467rem;
+    width: 33.333%;
+    float: left;
+    border-right: .5px solid #373837;
+    border-top: .5px solid #373837;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .68rem;
+  }
+  .key:nth-child(3n) {
+    border-right: none;
+  }
+  .key:nth-child(1) {
+    border-top: none;
+  }
+  .key:nth-child(2) {
+    border-top: none;
+  }
+  .key:nth-child(3) {
+    border-top: none;
+  }
+  .common-bc-2a2b2a {
+    background-color: #2a2b2a;
+  }
+  .del-icon {
+    height: .467rem;
+  }
+}
+.animated {
+  animation-duration: .2s;
+  animation-fill-mode: both;
+}
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 100%, 0);
+    display: none;
+  }
+}
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slide-enter-active {
+  animation-name: slideInUp;
+}
+.slide-leave-active {
+  animation-name: slideInDown;
+}

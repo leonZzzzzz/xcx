@@ -1,0 +1,69 @@
+.popup-coupon {
+  //width: 7.73rem;
+  width: 100%;
+  height: 12rem;
+  background-color: #EFEFEF;
+  padding-top: 2.62rem;
+  .coupon-top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #333333;
+    background-color: white;
+    .top-head {
+      padding: .4rem 0;
+      font-size: .427rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .head-close {
+        position: absolute;
+        right: 0;
+        padding: 0 .534rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        img {
+          height: .32rem;
+        }
+      }
+    }
+    .top-tab {
+      border-bottom: .015rem solid #C9CACA;
+      font-size: .374rem;
+      height: 1.173rem;
+      width: 100%;
+      display: flex;
+      .tab-box {
+        width: 50%;
+        height: inherit;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .tab-style {
+          height: inherit;
+          display: flex;
+          align-items: center;
+          padding-left: .134rem;
+          padding-right: .134rem;
+        }
+        .pitch-on {
+          color: #F6BF3C;
+          border-bottom: .054rem solid #F6BF3C;
+        }
+        .pitch-not {
+          padding-bottom: .054rem;
+        }
+      }
+    }
+  }
+  .coupon-content {
+    padding: .4rem .4rem 0;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}

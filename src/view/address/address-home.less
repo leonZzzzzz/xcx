@@ -1,0 +1,76 @@
+.address {
+  height: 100%;
+  width: 100%;
+  padding: 1.6rem 0 1.173rem;
+  background-color: #313131;
+  .text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .address-list {
+    height: inherit;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling : touch;
+    .list-cell {
+      padding: .4rem;
+      font-size: .374rem;
+      color: white;
+      background-color: #262626;
+      margin-top: .267rem;
+      .w-50 {
+        width: 50%;
+      }
+      .cell-name-phone {
+        display: flex;
+        align-items: center;
+      }
+      .cell-address {
+        padding: .16rem 0 .4rem;
+        border-bottom: .03rem solid #C9CACA;
+      }
+      .cell-handle {
+        display: flex;
+        align-items: center;
+        padding-top: .4rem;
+        .handle-bth {
+          display: flex;
+          align-items: center;
+          .not-pitch-on-icon {
+            height: .48rem;
+            width: .48rem;
+            border-radius: 100%;
+            border: .03rem solid #C9CACA;
+            margin-right: .16rem;
+          }
+          .pitch-on-icon {
+            height: .48rem;
+            margin-right: .16rem;
+          }
+          .edit-delete-icon {
+            height: .374rem;
+            margin-right: .16rem;
+          }
+          .bth-text {
+            white-space: nowrap;
+            font-size: .32rem;
+          }
+        }
+      }
+    }
+  }
+  .add-bth {
+    width: 100%;
+    background-color: #F6BF3C;
+    height: 1.173rem;
+    font-size: 0.427rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+}
+
